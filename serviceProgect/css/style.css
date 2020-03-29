@@ -184,29 +184,7 @@ body {
 .feed {
   background-color: #3d3d3d;
   color: white;
-  padding: 40px 0;
-  /*плохо сделано необходимо изменить*/
-   * & img
-   *   display: block
-   *   margin: 0 auto
-   * & p
-   *   display: inline
-   *   position: relative
-   *   background-color: white
-   *   color: black
-   * .numb
-   *   top: -39px
-   *   left: 40px
-   *   padding: 15px
-   * .name
-   *   top: -51px
-   *   left: 47px
-   *   padding: 3px
-   *   padding-right: 5px
-   * .post
-   *   top: -28px
-   *   left: -49px
-   *   padding: 3px */ }
+  padding: 40px 0; }
   .feed p {
     margin-top: 30px;
     text-align: center; }
@@ -230,6 +208,27 @@ body {
     position: relative;
     top: -43px;
     left: 168px; }
+  .feed .feedbackSector img {
+    display: block;
+    margin: 0 auto; }
+  .feed .feedbackSector p {
+    display: inline;
+    position: relative;
+    background-color: white;
+    color: black; }
+  .feed .feedbackSector .numb {
+    top: -39px;
+    left: 40px;
+    padding: 15px; }
+  .feed .feedbackSector .name {
+    top: -51px;
+    left: 47px;
+    padding: 3px;
+    padding-right: 5px; }
+  .feed .feedbackSector .post {
+    top: -28px;
+    left: -49px;
+    padding: 3px; }
 
 /*Subtitle */
 .white {
