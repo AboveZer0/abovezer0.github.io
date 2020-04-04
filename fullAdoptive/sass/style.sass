@@ -35,6 +35,7 @@ body
   text-align: left
   flex-grow: 1
   padding: 0 0 0 10px
+  color: #6c6c6c
 .header__list
   display: flex
   position: relative
@@ -163,16 +164,125 @@ body
   .slide
     margin-top: 50px
   .slide__content
+    display: flex  
     & h2
       font-size: 31px
-      padding: 5% 0 0 0
       line-height: 25px
-
+      padding: 0px
     & p
       font-size: 23px
       line-height: 25px
     & button
-      margin: 5px 0 0 0
       & p
         line-height: 25px
-
+    &__center
+      align-self: center
+  .slide__image
+    padding: 2% 0 0 0
+    & img
+      width: 95%
+.popular__row
+  display: flex
+  & hr
+    opacity: 0
+.popular__column
+  flex: 0 1 33.333%
+  & img
+    display: block
+    margin: 0 auto
+    padding: 70px 0 23px 0
+  & h3
+    color: #5094f2
+    font-size: 20px
+    weight: 400
+    text-align: center
+  & p
+    color: #909090
+    font-size: 14px
+    font-weight: 400
+    padding: 8px 20%  90px 20%
+    text-align: center
+@media (max-width: 767px)
+  .popular__row
+    display: flex
+    flex-direction: column
+    & hr
+      width: 100%
+      height: 1px
+      opacity: 0.4
+  .popular__column
+    display: flex
+    & img
+      display: block
+      margin: 0 
+      padding: 0
+      float: left
+      width: 30%
+      padding: 20px 20px 20px 10px
+    & p
+      padding: 0
+      text-align: left
+      font-size: 19px
+      font-weight: 400
+    & h3
+      text-align: left
+      font-size: 34px
+      font-weight: 400
+    &__content
+      align-self: center
+.shopping__title
+  & h3
+    color: #6f7173
+    font-size: 42px
+    font-weight: 400
+    line-height: 44.42px
+    padding-left: 10%
+.cart__row
+  display: flex
+.cart__column
+  display: flex
+  flex-basis: 50%
+  justify-content: center
+  align-items: center
+  & img
+    padding: 40px 0 40px 0
+  & h3
+    color: #6f7173
+    font-size: 26px
+    font-weight: 400
+    line-height: 44.42px
+  & p
+    color: #909090
+    font-size: 15px
+    font-weight: 300
+    line-height: 36px
+    width: 80%
+@media (max-width: 767px)
+  .shopping__title
+    & h3
+      padding: 0
+      text-align: center
+      font-size: 42px
+      font-weight: 400
+      line-height: 44.42px
+      padding-top: 40px
+  .cart__row
+    flex-direction: column
+  .cart__column
+    & h3
+      font-size: 34px
+    & p
+      font-size: 17px
+  .cart__content
+    padding: 0 10% 3% 10%
+.footer
+  & h4
+    color: #909090
+    font-size: 15px
+    font-weight: 300
+    line-height: 36px
+    text-align: center
+    padding: 30px 0
+  & hr
+    height: 1px
+    opacity: 0.2
